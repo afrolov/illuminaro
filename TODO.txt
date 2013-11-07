@@ -1,0 +1,102 @@
+TODO
+----
+* Show stoppers
+** documentation
+** examples
+** setup.py
+
+* High priority
+** memory profiling
+** showing state of waiting
+** setting value of a name updates corresponding UI element if attached
+** fix debug mode with reloading
+** demo video
+
+* Medium priority
+** conditional loading of javascript libraries (only if needed by widgets)
+** proper reactive engine and recalculation
+** show waiting/progress state (color or [animated] indicator)
+** docstrings
+** rename StaticHeader to just Header or even introduce h1, h2, h3
+
+* Low priority
+** input rate throttling
+** D3.js charts
+
+* Nice to have
+** on failed connection to server: show reason (^C, exception etc) and show reconnection dialog
+   (try to reconnect after timeout, reconnect now, stop trying)
+** option to manually recalculate long-running/resource-heavy observer by a press of a button
+   (disabled if recalculation is not needed)
+** interface to set favicon
+** Record macro (as a code) and replay
+** Incorporate ideas from Bret Victor's Tangle (and may be use it as a backend)
+
+* Inputs (controls)
+** Cross-browser feature reach slider with replay capability
+** Buttons (that trigger actions)
+** Smart combobox (with auto-fill: 3rd party - which one? "chosen"?)
+** Accordions
+** Color picker
+** Table (sortable, filterable, colored rows) - datatables.net?
+** Checkbox list
+
+* Outputs (displays)
+** Markdown
+** Code - with pygments
+** constructed HTML
+** Progress bar
+** Progress indicator
+** Charts - 2D and 3D
+** Lists
+** Graphs with layouts
+** Images (+ with magnification)
+** Dynamic charts (shearing, +/-, move)
+** Contour Maps (world, countries [with regions] etc)
+** D3 dynamic outputs: stock prices, scatter plots etc - whatever is in D3
+** Graphs, also with animation, and for possible pipeline progress visualization
+** Basically use highcharts, nvd3 et al for inspiration, take a look at ggplot2 and vega
+** Presentation mode (??)
+** Pre-canned DB visualization stuff
+** Data quality controls
+** round-trip code modification
+** collaboration: chat, VOIP, on-screen stickies
+** MathJax/LaTeX support
+** (semi-)automatic distribution/parallelization
+
+Possible Killer apps
+--------------------
+* Education materials
+* Parse and visualize SEC reports
+* Sentiment analysis (??)
+* Log analysis
+* Business Intelligence apps
+
+Miscellaneous notes
+-------------------
+* Maybe here we will have dynamic text?
+* Integration with IPython notebook
+* Embedding into browser - compilation to JavaScript or plugin way?
+* Compilation into Java "short-circuits" (code snippets doing calculation on the client side)
+* Test on mobile devices
+* Gesture and hotkey support
+* Live data sources and "freezing" datasets (data provenance)
+* GL enabled 3D in capable browsers/computers
+* Interactive pre-canned dialogs for e.g. chart options
+
+Principles
+----------
+* Reuse of well-established and popular technologies
+
+3rd party components
+--------------------
+* Python and its package ecosystem
+** numpy, scipy for calculation
+** matplotlib (and possibly mayavi...) for plotting
+* JavaScript
+** jQuery
+* CSS
+** Bootstrap
+
+Possible development in 3rd party usage
+* Look at JavaScript frameworks: Backbone, Angular, Ember; in that order
