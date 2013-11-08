@@ -1,6 +1,6 @@
 TODO
 ----
-* Show stoppers
+* Critical
 ** documentation
 ** examples
 ** setup.py
