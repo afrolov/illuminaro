@@ -14,8 +14,9 @@ Once you installed illuminaro, save the following code into hello_illuminaro.py
         TextOutput(id='text_output', text='Hello from Illuminaro')
     )
     IlluminaroApp(gui, None).run()
-
-and run it with ``python hello_illuminaro.py`` then in your browser navigate to
+    
+set ``PYTHONPATH=.`` or ``PYTHONPATH=/path/to/illuminaro`` so that python could find
+illuminaro code and run it with ``python examples/hello_illuminaro.py`` then in your browser navigate to
 http://localhost:5000/ You should see a simple text "Hello from Illuminaro"
 
 Features
